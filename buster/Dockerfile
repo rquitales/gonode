@@ -11,6 +11,16 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		pkg-config \
 		rsync \
 		ssh \
+        libgtk2.0-0 \
+        libgtk-3-0 \
+        libnotify-dev \
+        libgconf-2-4 \
+        libnss3 \
+        libxss1 \
+        libasound2 \
+        libxtst6 \
+        xauth \
+        xvfb \
 	&& rm -rf /var/lib/apt/lists/*
 
 ENV GOLANG_VERSION 1.14
